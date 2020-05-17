@@ -1,0 +1,19 @@
+{
+  "name": "trytechzone.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [],
+  "author": "Rohit",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "sass": "^1.26.5"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
