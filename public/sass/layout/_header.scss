@@ -1,1 +1,109 @@
+.body__header {
+  width: 100%;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-gray-light-2;
 
+  header {
+    margin: auto;
+
+    @media (min-width: 769px) {
+      width: 80%;
+    }
+
+    @media (min-width: 582px) and (max-width: 768px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 581px) {
+      width: 94%;
+    }
+  }
+}
+
+.header__brand {
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 2rem;
+  }
+}
+
+.header {
+  &__link {
+    @media (min-width: 769px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 3rem 0;
+    }
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 6rem;
+    }
+  }
+
+  &__nav {
+    text-align: center;
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    ul {
+      @media (min-width: 769px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  &__social {
+    @media (max-width: 768px) {
+      display: none;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+
+.nav {
+  &__list + li {
+    @media (min-width: 769px) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.social {
+  &__list + li {
+    margin-left: 20px;
+  }
+}
+
+.hamberger {
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 2rem;
+    right: 4%;
+  }
+}
+
+// @media (min-width: 1025px) {
+// }
+
+// @media (min-width: 769px) and (max-width: 1024) {
+// }
+
+// @media (min-width: 582px) and (max-width: 768px) {
+// }
+
+// @media screen and (max-width: 581px) {
+// }
