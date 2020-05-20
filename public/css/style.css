@@ -84,14 +84,16 @@ body {
 .nav__link {
   font-size: 1.7rem;
   line-height: 2;
-  color: #222;
-  font-weight: 600; }
+  color: #464646;
+  font-weight: 500;
+  color: #464646;
+  letter-spacing: 0.5px; }
 
 .social__link {
   font-size: 1.7rem;
   line-height: 2;
-  color: #222;
-  font-weight: 600; }
+  color: #464646;
+  font-weight: 500; }
 
 .u-center-text {
   text-align: center !important; }
@@ -168,7 +170,10 @@ body {
 @media (max-width: 768px) {
   .header__brand {
     position: absolute;
-    top: 2rem; } }
+    top: 1.7rem;
+    width: 100%;
+    padding-left: 1rem;
+    padding-bottom: 1.3rem; } }
 
 @media (min-width: 769px) {
   .header__link {
@@ -182,13 +187,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 6rem; } }
+    min-height: 6rem; } }
 
 .header__nav {
   text-align: center; }
   @media (max-width: 768px) {
     .header__nav {
-      display: none; } }
+      display: none;
+      margin-top: 6rem;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 1rem 0; } }
   @media (min-width: 769px) {
     .header__nav ul {
       display: flex;
@@ -197,7 +206,8 @@ body {
 
 @media (max-width: 768px) {
   .header__social {
-    display: none; } }
+    display: none;
+    padding: 1rem 0; } }
 
 .header__social ul {
   display: flex;
@@ -217,6 +227,8 @@ body {
 
 @media (max-width: 768px) {
   .hamberger {
+    padding-right: 1rem;
     position: absolute;
-    top: 2rem;
-    right: 4%; } }
+    top: 1.7rem;
+    right: 4%;
+    z-index: 99; } }
