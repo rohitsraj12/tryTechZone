@@ -28,7 +28,7 @@
 
                         <div class="header__link">
                         
-                              <nav class="header__nav">
+                              <nav class="header__nav" id="header-nav">
                                     <ul>
                                           <li class="nav__list"><a href="<?php //base_url(); ?>" class="nav__link">home</a></li>
                                           <li class="nav__list"><a href="review.php" class="nav__link">reviews</a></li>
@@ -44,7 +44,7 @@
                         </div>
                         <!-- end header brand -->
 
-                              <div class="header__social">
+                              <div class="header__social" id="header-social">
                                     <ul>
                                           <li class="social__list"><a href="#" target="_blank" class="social__link"><i title="twitter" class="fab fa-twitter"></i>1</a></li>
                                           <li class="social__list"><a href="#" target="_blank" class="social__link"><i title="facebook" class="fab fa-facebook-f"></i>2</a></li>
