@@ -21,8 +21,9 @@
       <div class="body__wrap">
             <div class="body__header">
                   <div id="hamberger" class="hamberger">
-                        <i class="fa fa-twitter"></i>
-                        manu
+                        <span class="hamberger__line"></span>
+                        <span class="hamberger__line"></span>
+                        <span class="hamberger__line"></span>
                   </div>
                   <header>
 
