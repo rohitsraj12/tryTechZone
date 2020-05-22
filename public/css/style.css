@@ -129,6 +129,30 @@ body {
   aside {
     width: 30%; } }
 
+.section__aside {
+  background-color: #fff;
+  border: 2px solid #f7f7f7;
+  box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  padding: 5rem 3rem; }
+
+.aside__header {
+  padding-bottom: 3rem; }
+
+.aside__figure {
+  padding-bottom: 3rem; }
+
+.aside__body {
+  padding-bottom: 3rem; }
+
+.aside__author {
+  text-align: center; }
+
+.aside-social__list {
+  display: inline; }
+  .aside-social__list + li {
+    margin-left: 2rem; }
+
 @media (min-width: 769px) {
   .section__article {
     display: flex;
@@ -136,10 +160,12 @@ body {
 
 .section__article-block {
   margin-bottom: 50px; }
-  .section__article-block:hover .article__image {
+  .section__article-block:hover .article__figure {
     transform: scale(1.03); }
   .section__article-block:nth-child(3n + 0) {
     width: 100%; }
+    .section__article-block:nth-child(3n + 0) .article__image {
+      height: 35rem; }
   .section__article-block:nth-child(3n + 1) {
     width: 48%;
     margin-right: 4%; }
@@ -154,6 +180,7 @@ body {
   margin-bottom: 2.5rem; }
 
 .article__figure {
+  transition: all 350ms ease-in-out;
   margin-bottom: 2.5rem; }
 
 .article__image {
