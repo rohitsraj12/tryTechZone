@@ -15,7 +15,6 @@
       <link rel="stylesheet" href="css/style.css">
 
       <!-- script -->
-
 </head>
 <body>
       <div class="body__wrap">
