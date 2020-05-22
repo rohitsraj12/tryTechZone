@@ -3,3 +3,37 @@ aside {
     width: 30%;
   }
 }
+
+.section__aside {
+  background-color: $color-white;
+  border: 2px solid $color-gray-light-1;
+  box-shadow: 0 0 2rem 0.2rem rgba($color-black, 0.2);
+  border-radius: 1rem;
+  padding: 5rem 3rem;
+}
+
+.aside {
+  &__header {
+    padding-bottom: 3rem;
+  }
+
+  &__figure {
+    padding-bottom: 3rem;
+  }
+
+  &__body {
+    padding-bottom: 3rem;
+  }
+
+  &__author {
+    text-align: center;
+  }
+
+  &-social__list {
+    display: inline;
+
+    & + li {
+      margin-left: 2rem;
+    }
+  }
+}
