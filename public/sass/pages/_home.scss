@@ -1,0 +1,15 @@
+.home__page {
+  @media (min-width: 769px) {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main {
+    @media (min-width: 769px) {
+      width: 67%;
+    }
+  }
+}
