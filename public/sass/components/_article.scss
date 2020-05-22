@@ -8,12 +8,16 @@
     &-block {
       margin-bottom: 50px;
 
-      &:hover .article__image {
+      &:hover .article__figure {
         transform: scale(1.03);
       }
 
       &:nth-child(3n + 0) {
         width: 100%;
+
+        .article__image {
+          height: 35rem;
+        }
       }
 
       &:nth-child(3n + 1) {
@@ -42,6 +46,7 @@
   }
 
   &__figure {
+    transition: all 350ms ease-in-out;
     margin-bottom: 2.5rem;
   }
 
