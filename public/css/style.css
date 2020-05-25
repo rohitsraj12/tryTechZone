@@ -135,6 +135,11 @@ body {
   box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   padding: 5rem 3rem; }
+  @media (min-width: 769px) {
+    .section__aside {
+      animation-duration: 1.4s;
+      animation-name: moveInRight;
+      animation-timing-function: ease-out; } }
 
 .aside__header {
   padding-bottom: 3rem; }
@@ -158,26 +163,41 @@ body {
     display: flex;
     flex-wrap: wrap; } }
 
-.section__article-block {
-  margin-bottom: 50px; }
-  .section__article-block:hover .article__figure {
-    transform: scale(1.03); }
-  .section__article-block:nth-child(3n + 0) {
-    width: 100%; }
-    @media (min-width: 769px) {
-      .section__article-block:nth-child(3n + 0) .article__image {
-        height: 35rem; } }
+@media (max-width: 768px) {
+  .section__article-block {
+    animation-duration: 1s;
+    animation-name: moveInBottom;
+    animation-timing-function: ease-out;
+    margin-bottom: 10rem; } }
+
+@media (min-width: 769px) {
+  .section__article-block {
+    margin-bottom: 7rem;
+    animation-duration: 1s;
+    animation-name: moveInLeft;
+    animation-timing-function: ease-out; } }
+
+.section__article-block:hover .article__figure {
+  transform: scale(1.03); }
+
+.section__article-block:nth-child(3n + 0) {
+  width: 100%; }
   @media (min-width: 769px) {
-    .section__article-block:nth-child(3n + 1) {
-      width: 48%;
-      margin-right: 4%; }
-      .section__article-block:nth-child(3n + 1) .article__image {
-        height: 22rem; } }
-  @media (min-width: 769px) {
-    .section__article-block:nth-child(3n + 2) {
-      width: 48%; }
-      .section__article-block:nth-child(3n + 2) .article__image {
-        height: 22rem; } }
+    .section__article-block:nth-child(3n + 0) .article__image {
+      height: 35rem; } }
+
+@media (min-width: 769px) {
+  .section__article-block:nth-child(3n + 1) {
+    width: 48%;
+    margin-right: 4%; }
+    .section__article-block:nth-child(3n + 1) .article__image {
+      height: 22rem; } }
+
+@media (min-width: 769px) {
+  .section__article-block:nth-child(3n + 2) {
+    width: 48%; }
+    .section__article-block:nth-child(3n + 2) .article__image {
+      height: 22rem; } }
 
 .article__header {
   margin-bottom: 2.5rem; }
@@ -224,7 +244,10 @@ body {
 .body__header {
   width: 100%;
   background-color: #fff;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #eee;
+  animation-duration: 1s;
+  animation-name: moveInTop;
+  animation-timing-function: ease-out; }
   .body__header header {
     margin: auto; }
     @media (min-width: 769px) {
